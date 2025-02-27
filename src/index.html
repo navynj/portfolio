@@ -1,10 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Portfolio</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Yoonji's Portfolio</title>
+</head>
+
+<body>
+  <!-- HERO -->
+  <header id="hero">
+    <div id="hero__title">
+      <span>From blueprint to experience</span>
+      <h2>I design with code.<br />I build with purpose.</h2>
+      <span>I create digital flow</span>
+    </div>
+    <div id="hero__info">
+      <span class="chip chip--white">Yoonji Lee</span>
+      <span class="chip-list">Frontend Engineer</span>
+      <p>Passionate about crafting <strong>intuitive</strong>, <strong>interactive</strong>, and <strong>visually
+          appealing</strong> digital experiences. </p>
+    </div>
+  </header>
+  <main>
+    <!-- ABOUT -->
+    <section id="about">
+      <div id="about__main">
+        <h3>About</h3>
+        <div id="about__profile">
+          <img src="images/profile.png" alt="Yoonji Portrait" />
+        </div>
+        <div id="about__body">
+          <p>I don’t just write code.<br />
+            I craft seamless interactions and design intuitive user experiences.</p>
+          <p>With a background in Design Engineering, a discipline at the intersection of computer science and design,
+            I’ve built a strong technical foundation while developing a deep understanding of user-centric design.</p>
+          <p>I aim to combine functionality with aesthetics, building interfaces that are not just visually appealing
+            but also useful, meaningful, and beautiful.</p>
+          <p>Currently based in Vancouver, Canada, I aspire to contribute to innovative projects that elevate technology
+            into something people genuinely enjoy and find value in.</p>
+        </div>
+      </div>
+      <div id="about__hobby">
+        <p>Beyond coding, I enjoy drawing and painting, which sharpen my eye for structure and detail. <br />
+          Thinking visually helps me build interfaces that are clear, intuitive, and well-organized.</p>
+        <p>Music is another important part of my life. Playing bass in a band has strengthened my ability to listen,
+          adapt, and collaborate in real time—much like in software development. Recently, I formed a band in Canada, an
+          exciting way to connect with new people and share my passion for music.</p>
+        <a id="about__medium" href="https://medium.com/@navynj/about-me-yoonji-029ef2e65c52" target="_blank"></a>
+        <ifram id="about__bass" width="560" height="315"
+          src="https://www.youtube.com/embed/dVQNKx2bnxU?si=hLTIlgt0A2OUXLDZ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+    <!-- SKILLS -->
+    <section id="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>
+          <h5>Frontend</h5>
+          <ul class="chip-list">
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Typescript</li>
+            <li>TailwindCSS</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Backend</h5>
+          <ul class="chip-list">
+            <li>Next.js API Routes</li>
+            <li>Supabase</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Others</h5>
+          <ul class="chip-list">
+            <li>Git</li>
+            <li>Figma</li>
+            <li>Python</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- WORK EXPERIENCE -->
+    <section id="work">
+      <h3>Work Experience</h3>
+      <ul>
+        <li>
+          <div class="work__head">
+            <div>
+              <h5>BH Food Group</h5>
+              <p>Full Stack Web Developer</p>
+            </div>
+            <div>
+              <p>Jan 2024 - Present</p>
+              <p>Vancouver, BC</p>
+            </div>
+          </div>
+          <div class="work__body">
+            <div class="work__body__title">
+              <h6>Gandago Seller Page</h6>
+              <ul class="chip-list">
+                <li>Next.js</li>
+                <li>Typescript</li>
+                <li>TailwindCSS</li>
+                <li>Jotai</li>
+                <li>Next-auth</li>
+                <li>Next-intl</li>
+                <li>React-hook-form</li>
+                <li>Zod</li>
+                <li>ShadCN</li>
+                <li>Vercel</li>
+              </ul>
+            </div>
+            <ul class="work__body__list">
+              <li><strong>Redesigned</strong> and <strong>developed</strong> a seller portal for a multi-vendor
+                marketplace, improving usability and efficiency.</li>
+              <li>Built <strong>Shopify GraphQL API integration</strong> to manage multi-seller shipping methods and
+                pickup locations, streamlining order processing with Metafields.</li>
+              <li>Strengthened authentication and route protection using <strong>NextAuth</strong>, ensuring secure user
+                access.</li>
+              <li>Added real-time order notifications using <strong>webhooks</strong>.</li>
+              <li>Enhanced <strong>mobile responsiveness</strong>, ensuring a seamless experience across various
+                devices.</li>
+              <li>Added localization support with <strong>next-intl</strong>, making the platform more accessible to a
+                global audience.</li>
+              <li>Implemented a <strong>WYSIWYG editor</strong> with <strong>image upload support</strong> using lexical
+                and Shopify GraphQL API, ensuring a seamless content management experience.</li>
+            </ul>
+          </div>
+          <div class="work__overlay">
+            <div class="screen-wrapper screen-wrapper--desktop">
+              <img src="images/gandago-seller.png" />
+            </div>
+            <a class="btn__link btn__link--circle" href="https://gandago-seller">↗</a>
+          </div>
+        </li>
+        <li>
+          <div class="work__head">
+            <div>
+              <h5>CookieDog</h5>
+              <p>Frontend Engineer</p>
+            </div>
+            <div>
+              <p>Mar 2024 - Aug 2024</p>
+              <p>Seoul, Korea</p>
+            </div>
+          </div>
+          <div class="work__body">
+            <ul class="work__body__list">
+              <li>Implemented new features for the artist dashboard page in the Artist-Fan Connection Platform project
+                using <span class="chip">React</span></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="work__head">
+            <div>
+              <h5>National Cancer Center Graduate School of Cancer Science and Policy</h5>
+              <p>Researcher of Industry-University Cooperation Foundation</p>
+            </div>
+            <div>
+              <p>Sep 2023 - Dec 2023</p>
+              <p>Goyang, Gyeonggi, Korea</p>
+            </div>
+          </div>
+          <div class="work__body">
+            <ul class="work__body__list">
+              <li>Contributed to a project developing synthesis oral image to support the construction of a dental
+                disease AI model.
+              <li>Enhanced the Visual Turing Test web application by adding features and maintaining using <span
+                  class="chip">Django</span>.</li>
+              <li>Streamlined data workflows by developing <span class="chip">Python</span> automation scripts for
+                experiment data management.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="work__head">
+            <div>
+              <h5>Mobigen</h5>
+              <p>UI Solution Research Team Intern</p>
+            </div>
+            <div>
+              <p>Jun 2021 - Mar 2022</p>
+              <p>Seoul, Korea</p>
+            </div>
+          </div>
+          <div class="work__body">
+            <ul class="work__body__list">
+              <li>Maintained and improved the big data visualization editor IRIS Studio, developing new features using
+                <span class="chip">AngularJS</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- PROJECT -->
+    <section id="project">
+      <h3>Project</h3>
+      <ul>
+        <li>
+          <h5>PLOT</h5>
+          <a class="icon--github" href="https://github.com/plot-day/plot-client"></a>
+          <div>
+            <p>Real-Time Social Networking & Productivity App</p>
+            <p>(Ongoing)</p>
+            <a class="btn__link btn__link--rounded" href="https://plot-day.vercel.app">↗</a>
+          </div>
+          <ul>
+            <li class="screen-wrapper screen-wrapper--mobile">
+              <img src="images/plot-1.png" alt="Screenshot of plot main todolist screen" />
+            </li>
+            <li class="screen-wrapper screen-wrapper--mobile">
+              <img src="images/plot-2.png" alt="Screenshot of plot feed screen" />
+            </li>
+            <li class="screen-wrapper screen-wrapper--mobile">
+              <img src="images/plot-3.png" alt="Screenshot of plot channel room screen" />
+            </li>
+          </ul>
+          <ul class="chip-list">
+            <li>Next.js</li>
+            <li>Typescript</li>
+            <li>TailwindCSS</li>
+            <li>Jotai</li>
+            <li>Next-auth</li>
+            <li>Supabase</li>
+          </ul>
+          <ul>
+            <li>Developed a platform that combines task tracking, status updates, and shared playlists.</li>
+            <li>Features real-time task sharing, live DJ mode, and a shared focus timer to enhance productivity and
+              collaboration.</li>
+          </ul>
+        </li>
+        <li>
+          <h5>DURING</h5>
+          <a class="icon--github" href="https://github.com/during-budget/during-web"></a>
+          <div>
+            <p>Expense Tracker</p>
+            <p>(Ongoing)</p>
+            <a class="btn__link btn__link--rounded" href="https://www.during.money">↗</a>
+          </div>
+          <ul>
+            <li class="screen-wrapper screen-wrapper--mobile">
+              <img src="images/during-1.png" alt="Screenshot of during main chart screen" />
+            </li>
+            <li class="screen-wrapper screen-wrapper--mobile">
+              <img src="images/during-2.png" alt="Screenshot of during category cahrt screen" />
+            </li>
+            <li class="screen-wrapper screen-wrapper--mobile">
+              <img src="images/during-3.png" alt="Screenshot of during category budget edit screen" />
+            </li>
+          </ul>
+          <ul class="chip-list">
+            <li>React</li>
+            <li>Typescript</li>
+            <li>Redux Toolkit</li>
+            <li>React-Native</li>
+            <li>React-native-google-mobile-ad</li>
+            <li>React-native-iap</li>
+          </ul>
+          <ul>
+            <li>Designed and developed a budget planning application with an intuitive UI.</li>
+            <li>Integrated ad system and payment features.</li>
+            <li>Collaborated with a back-end developer to ensure seamless data management.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <!-- CONTACT -->
+  <footer id="contact">
+    <h3>Code. Collaboration. Innovation. <br /> Let's make it happen.</h3>
+    <ul>
+      <li>
+        <span>📧</span><span>navyoonj@gmail.com</span>
+      </li>
+      <li>
+        <i class="icon--github icon--white" /><span>@navynj</span>
+      </li>
+      <li>
+        <span>📞</span><span>+1 (672) 727-1704</span>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>
