@@ -1,0 +1,27 @@
+$primary: #0d1fec;
+$white: #fff;
+$black: #000;
+
+@mixin primary-bg {
+  background-color: $primary;
+  color: $white;
+  --border-color: #{$white};
+}
+
+@mixin white-bg {
+  background-color: $white;
+  color: $primary;
+  --border-color: #{$primary};
+}
+
+@mixin black-bg {
+  background-color: $black;
+  color: $white;
+  --border-color: #{$white};
+}
+
+@mixin absolute-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

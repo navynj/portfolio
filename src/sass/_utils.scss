@@ -1,0 +1,33 @@
+@use '_variables' as *;
+
+.text-white {
+  color: $white;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-lg {
+  font-size: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.relative {
+  position: relative;
+}
