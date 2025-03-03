@@ -254,7 +254,7 @@ section {
 
 // PROJECT
 .project {
-  $circle: 25rem;
+  $circle: 24rem;
   $offset: 4.5rem;
 
   &__wrapper {
@@ -311,6 +311,7 @@ section {
     position: relative;
     color: $white;
     width: $circle;
+    max-width: 95%;
     margin: 0 auto;
     text-align: center;
     padding: 0 4.5rem;

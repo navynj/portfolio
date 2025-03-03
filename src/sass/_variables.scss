@@ -1,6 +1,7 @@
 $primary: #0d1fec;
 $white: #fff;
 $black: #000;
+$mobile: 640px;
 
 @mixin primary-bg {
   background-color: $primary;

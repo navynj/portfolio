@@ -1,0 +1,194 @@
+@use '_variables' as *;
+
+@media (max-width: $mobile) {
+    body {
+        font-size: 18px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .page-width {
+        max-width: unset;
+        padding-inline-start: 2rem;
+        padding-inline-end: 2rem;
+    }
+
+    .hero {
+        &__title {
+            padding: 4rem 0;
+            &__main {
+                font-size: 4.5rem;
+            }
+             
+            &__sub {
+                white-space: normal;
+                letter-spacing: 0.5rem;
+    
+                &--left {
+                    text-align: left;
+                    &::after{
+                        margin-left: 0.5rem;
+                    }
+                }
+    
+                &--right {
+                    text-align: right;
+                    &::before{
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        &__info {
+            padding: 3rem;
+            border-radius: 8rem;
+            text-align: center;
+
+            .chip-list {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+
+    .about {
+        &__main {
+            gap: 0;
+
+            &__profile {
+                width: 100%;
+                padding-block-start: 5rem;
+
+                &::before {
+                    max-width: 100%;
+                    transform: translateY(-10%);
+                }
+            }
+
+            &__body {
+                padding: 1rem 0;
+            }
+        }
+
+        .logo--medium {
+            width: 5rem;
+            height: 5rem;
+            top: -2rem;
+        }
+
+        &__more__video {
+            width: 320px;
+        }
+    }
+
+    .skill__line {
+        gap: 2rem;
+        padding: 4rem 0;
+
+        .chip-list {
+            justify-content: center;
+        }
+    }
+
+    .work__section {
+        &__head {
+            padding: 0 1rem;
+            gap: 1.25rem;
+
+            &__info {
+
+
+                h5 {
+                    font-size: 2.5rem;
+                }
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.25;
+            }
+
+            p.text-lg {
+                font-size: 1.125rem;
+            }
+
+        }
+
+        &__body {
+            padding: 1.5rem;
+
+            h6 {
+                font-size: 2.5rem;
+            }
+
+            .flex {
+                gap: 0.5rem;
+            }
+        }
+
+        &__overlay {
+            align-items: end;
+
+            .btn__link--circle::before {
+                width: 4rem;
+                height: 4rem;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .project {
+        $offset: 5rem;
+
+        &__title {
+            h5, &::after {
+                font-size: 5.25rem;
+            }
+        }
+
+        &__screenshots {
+            gap: 0.5rem;
+            padding-block-start: 1rem;
+        }
+
+        &__techstack {
+            width: 100%;
+
+            li {
+                font-size: 1.125rem;
+            }
+        }
+
+        &__description {
+            width: 100%;
+            padding-inline-start: 1.5rem;
+        }
+    }
+
+    .contact {
+        &__tagline {
+            font-size: 3.5rem;
+        }
+    }
+
+    .screen-wrapper {
+        &--desktop {
+            width: 100%;
+            padding: 1rem;
+        }
+
+        &--mobile {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .chip--lg,
+    .chip-list--lg > li {
+        padding: 1rem 2rem;
+    }
+}

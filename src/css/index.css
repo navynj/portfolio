@@ -308,8 +308,8 @@ section {
   transform: translateX(-50%);
   content: "";
   top: 4.5rem;
-  width: 25rem;
-  height: 25rem;
+  width: 24rem;
+  height: 24rem;
   border-radius: 50%;
   background-color: #0d1fec;
   clip-path: circle(50% at center);
@@ -322,10 +322,10 @@ section {
   top: 0;
   z-index: 0;
   color: white;
-  width: 25rem;
-  height: 25rem;
+  width: 24rem;
+  height: 24rem;
   border-radius: 50%;
-  clip-path: circle(12.5rem at 50% 17rem);
+  clip-path: circle(12rem at 50% 16.5rem);
 }
 .project__title__plot::after {
   content: "PLOT";
@@ -336,7 +336,8 @@ section {
 .project__summary {
   position: relative;
   color: #fff;
-  width: 25rem;
+  width: 24rem;
+  max-width: 95%;
   margin: 0 auto;
   text-align: center;
   padding: 0 4.5rem;
@@ -531,6 +532,144 @@ section {
 }
 .btn:hover, .logo:hover {
   transform: scale(1.125);
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .page-width {
+    max-width: unset;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+  }
+  .hero__title {
+    padding: 4rem 0;
+  }
+  .hero__title__main {
+    font-size: 4.5rem;
+  }
+  .hero__title__sub {
+    white-space: normal;
+    letter-spacing: 0.5rem;
+  }
+  .hero__title__sub--left {
+    text-align: left;
+  }
+  .hero__title__sub--left::after {
+    margin-left: 0.5rem;
+  }
+  .hero__title__sub--right {
+    text-align: right;
+  }
+  .hero__title__sub--right::before {
+    margin-right: 0.5rem;
+  }
+  .hero__info {
+    padding: 3rem;
+    border-radius: 8rem;
+    text-align: center;
+  }
+  .hero__info .chip-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about__main {
+    gap: 0;
+  }
+  .about__main__profile {
+    width: 100%;
+    padding-block-start: 5rem;
+  }
+  .about__main__profile::before {
+    max-width: 100%;
+    transform: translateY(-10%);
+  }
+  .about__main__body {
+    padding: 1rem 0;
+  }
+  .about .logo--medium {
+    width: 5rem;
+    height: 5rem;
+    top: -2rem;
+  }
+  .about__more__video {
+    width: 320px;
+  }
+  .skill__line {
+    gap: 2rem;
+    padding: 4rem 0;
+  }
+  .skill__line .chip-list {
+    justify-content: center;
+  }
+  .work__section__head {
+    padding: 0 1rem;
+    gap: 1.25rem;
+  }
+  .work__section__head__info h5 {
+    font-size: 2.5rem;
+  }
+  .work__section__head p {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+  .work__section__head p.text-lg {
+    font-size: 1.125rem;
+  }
+  .work__section__body {
+    padding: 1.5rem;
+  }
+  .work__section__body h6 {
+    font-size: 2.5rem;
+  }
+  .work__section__body .flex {
+    gap: 0.5rem;
+  }
+  .work__section__overlay {
+    align-items: end;
+  }
+  .work__section__overlay .btn__link--circle::before {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+  .project__title h5, .project__title::after {
+    font-size: 5.25rem;
+  }
+  .project__screenshots {
+    gap: 0.5rem;
+    padding-block-start: 1rem;
+  }
+  .project__techstack {
+    width: 100%;
+  }
+  .project__techstack li {
+    font-size: 1.125rem;
+  }
+  .project__description {
+    width: 100%;
+    padding-inline-start: 1.5rem;
+  }
+  .contact__tagline {
+    font-size: 3.5rem;
+  }
+  .screen-wrapper--desktop {
+    width: 100%;
+    padding: 1rem;
+  }
+  .screen-wrapper--mobile {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .chip--lg,
+  .chip-list--lg > li {
+    padding: 1rem 2rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
